@@ -11,9 +11,6 @@
 |
 */
 
-use App\Http\Controllers\HomeController;
-
-Route::get('/', 'HomeController@index');
-
-//AdminController
-Route::get('/admin', 'AdminController@index');
+Route::get('/', function () {
+    return view('welcome');
+});
