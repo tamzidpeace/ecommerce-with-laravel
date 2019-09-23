@@ -17,3 +17,5 @@ Route::get('/', 'HomeController@index');
 
 //AdminController
 Route::get('/admin', 'AdminController@index');
+
+Route::get('admin/dashboard', 'AdminController@dashboard');
